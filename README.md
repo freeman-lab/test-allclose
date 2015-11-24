@@ -23,7 +23,7 @@ var allclose = require('test-allclose')
 then use with a test instance `t` of [`tape`](https://github.com/substack/tape) or similar
 
 ```javascript
-close = allclose(t)
+var close = allclose(t)
 ```
 
 to get a function `close(array1, array2, [atol], [rtol])` that, when called on two arrays, will execute tests using the test instance `t` and generate useful output on test failure
