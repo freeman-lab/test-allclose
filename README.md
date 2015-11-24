@@ -49,7 +49,7 @@ you can test numbers
 
 ```javascript
 allclose(t)(1, 1)
-> test fails
+> test passes
 
 allclose(t)(1, 2)
 > test fails
