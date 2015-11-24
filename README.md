@@ -14,12 +14,19 @@ npm install test-allclose
 
 # usage
 
+require with 
+
 ```javascript
 var allclose = require('test-allclose')
-var close = allclose(t)
 ```
 
-returns a function `close(array1, array2, [atol], [rtol])` that, when called on two arrays, will execute tests using the test instance `t` and generate useful output on test failure
+then use with a test instance `t` of [`tape`](https://github.com/substack/tape) or similar
+
+```javascript
+close = allclose(t)
+```
+
+to get a function `close(array1, array2, [atol], [rtol])` that, when called on two arrays, will execute tests using the test instance `t` and generate useful output on test failure
 
 # examples
 
@@ -60,10 +67,10 @@ and you can optionally specify a tolerance
 
 ```javascript
 allclose(t)([1, 2], [1, 2.1])
-> test passes
+> test fails
 
 allclose(t)([1, 2], [1, 2.1], 0.3)
-> test fails
+> test passes
 ```
 
 
