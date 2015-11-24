@@ -26,7 +26,7 @@ then use with a test instance `t` of [`tape`](https://github.com/substack/tape) 
 var close = allclose(t)
 ```
 
-to get a function `close(array1, array2, [atol], [rtol])` that, when called on two arrays, will execute tests using the test instance `t` and generate useful output on test failure
+to get a function `close(a, b, [atol], [rtol])` that, when called on two arrays `a` and `b`, will execute tests using the test instance `t` and generate useful output on test failure
 
 # examples
 
