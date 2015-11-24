@@ -48,19 +48,31 @@ test('arrays', function (t) {
 you can test numbers
 
 ```javascript
+allclose(t)(1, 1)
+> test fails
+
 allclose(t)(1, 2)
+> test fails
 ```
 
 or arrays
 
 ```javascript
+allclose(t)([1, 2], [1, 2])
+> test passes
+
 allclose(t)([1, 2], [1, 3])
+> test fails
 ```
 
 or nested arrays
 
 ```javascript
+allclose(t)([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+> test passes
+
 allclose(t)([[1, 2], [3, 4]], [[1, 2], [3, 5]])
+> test fails
 ```
 
 and you can optionally specify a tolerance
