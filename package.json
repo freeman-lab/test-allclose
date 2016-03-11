@@ -1,6 +1,6 @@
 {
   "name": "test-allclose",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "tape utility to compare nested arrays within an epislon",
   "main": "index.js",
   "scripts": {
