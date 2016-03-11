@@ -55,3 +55,8 @@ test('mixed array', function (t) {
   allclose(t)(['a', 1], ['a', 1])
   t.end()
 })
+
+test('typed array', function (t) {
+  allclose(t)(new Float32Array([0, 1]), new Float32Array([0, 1]))
+  t.end()
+})
